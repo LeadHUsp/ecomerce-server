@@ -13,6 +13,25 @@ const categorySchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    seo: {
+      title: {
+        type: String,
+        required: false,
+      },
+      description: {
+        type: String,
+        required: false,
+      },
+      kyewords: {
+        type: String,
+        required: false,
+      },
+    },
+    content: {
+      type: String,
+      required: false,
+    },
+    filters: [{ name: String, values: [String] }],
     categoryImage: { type: String },
     parentId: {
       type: String,

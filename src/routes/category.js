@@ -24,6 +24,6 @@ router.post(
   upload.single('categoryImage'),
   addCategory
 );
-router.get('/category/getcategory', getCategories);
+router.get('/category/', getCategories);
 
 module.exports = router;
